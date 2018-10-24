@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1 align="center">신이나를 만들때</h1>
+        <style>
+            body{
+                background-color:gray;
+            }
+            h1{
+                color:gray;
+                margin:10px auto 10px auto;
+                width:400px;
+                height:50px;
+                border: 5px solid;
+                border-radius:10px 10px 10px 10px;
+                background-color:white;
+                
+            }
+            div{  
+                color:gray;
+                padding:20px;
+                margin:10px auto 10px auto ;
+                width:700px;
+                background-color:white;
+                border-radius:10px;
+            }
+            
+            
+        </style>
     </head>
     <body>
-        <center><p><%=@myarray%></p></center>
-
-        <center><%= image_tag @picture[0] %>
-        <%= image_tag @picture[1] %>
-        <%= image_tag @picture[2] %></center>    
-        
+        <div> 
+            <h1 align="center">신이 나를 만들때</h1>
+            <strong><center><p><%=@myarray%> </p></center></strong>
+           
+            <center class><%= image_tag @picture[0] %>
+            <%= image_tag @picture[1] %>
+            <%= image_tag @picture[2] %></center> 
+        </div>
     </body>
 </html>    
